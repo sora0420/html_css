@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- block element >>한 행을 차지-->
+	<div style="background-color:red; text-align:center">
+		div 입니다.	
+	</div>
+	<h4 style="background-color:green;">
+		제목
+	</h4>
+	<p style="background-color:blue;">
+		본문 내용
+	</p>
+	
+	<!-- inline element	 // </> >> 시작인 동시에 끝이다-->
+	<img src="common/images/photo1.jpg" width="100"/>
+	<img src="common/images/photo2.jpg" width="100"/>
+	<img src="common/images/photo3.jpg" width="100"/>
+	<span>span1</span> <!-- 옆으로 이동 -->
+	<span>span2</span>
+	<span>span3</span>
+	
+	<!-- 
+inline vs block vs inline-block 속성을 비교해보자.
+display: inline ?
+대표적인 태그로는 span을 예로 들 수 있는데, text 크기만큼만 공간을 점유하고 줄바꿈을 하지 않는다.
+
+width/height 적용불가
+margin/padding-top/bottom 적용불가
+line-height를 원하는대로 사용할 수 없다.
+display: block ?
+block 속성은 무조건 한줄을 점유하고 있고, 다음 태그는 무조건 줄바꿈이 적용된다. 대표적인 태그는 div가 있다.
+
+display: inline-block ?
+inline-block 속성은 inline 속성의 특징과 block 속성의 특징 둘 다 가지고 있는 속성이다. 기본적인 특징은 inline 속성과 비슷한데 (줄바꿈을 하지 않고, 동일한 라인에 작성가능) inline속성에서 할 수 없었던 width/height 변경 및 line-height를 커스텀하게 적용할 수 있는 특징이 있다.
+
+width/height 적용 가능
+margin/padding-top/bottom 적용 가능
+line-height 적용 가능
+** 고려사항
+
+inline-block 사이에 공백이 생기게 되는데, parent 태그에 font-size: 0를 적용하면 해결된다.
+inline-block 끼리 높이가 안맞을 때 상위 공백이 생기게 되는데 vertical-align: top을 적용하면 해결할 수 있다.
+	
+	 -->
+</body>
+</html>

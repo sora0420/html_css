@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<style type="text/css">
+	*{
+	font-size:medium;
+	margin:0px;
+	padding:0px;
+	}
+body{
+	background-color:black;
+	}
+p {
+	color: blue;
+	background-color:yellow;
+}
+
+#p4 {
+	color: green;
+}
+
+.group1 {
+	color: cyan;
+}
+</style>
+<!--*은 모든 태그 >> 브라우저마다 디폴트 값 설정할때
+ / inline style 태그까지/ internal style id랑 class-->
+	<p style="color: red;">this is content1</p>
+	<!-- 좁게 지정한게 우선순위가 더 높음 -->
+	<p>this is content2</p>
+	<p>this is content3</p>
+	<p id="p4">this is content4</p>
+	<!-- 좁게 지정한게 우선순위가 더 높음 -->
+	<p class="group1">this is content3</p>
+	<div class="group1">this is content3</div>
+	<!-- 같은 그룹으로 묶임 -->
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<style type="text/css">
+/* class1과 class2가 동시에 적용된 element 선택
+.class1.class2 {
+	color: red;
+}
+
+class1 또는 class2를 선택
+.class1, .class2 {
+	color: red;
+} */
+
+/* class3인 엘리먼트의 내용(자식,자손모두 포함)중에서 class4가 선택*/
+.class3 .class4 {
+	color: red;
+}
+
+/* class3인 엘리먼트의 내용중에서 바로 밑(자식) class4가 선택*/
+.class3 > .class4 {
+	color: red;
+}
+</style>
+	<p>this is content1</p>
+
+	<p class="class1">this is content3</p>
+	<p class="class1 class2">this is content3</p>
+	<p class="class2">this is content3</p>
+	<div class="class3">
+		<p>this is content5</p>
+		<p class="class4">this is content6</p>
+		<!-- class3인 엘리먼트의 내용중에서 class4가 선택 //딱 이것만 -->
+
+	</div>
+	<p class="class2">this is content3</p>
+	
+
+</body>
+</html>

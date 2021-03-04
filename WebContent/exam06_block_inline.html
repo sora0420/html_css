@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		<div>
+			<lable for="uid">아이디</lable> <!-- 이 레이블은 id를 위한 레이블이다 // id의 속성값은 유일해야 함 = 식별자-->
+			<input id="uid" type="text" /> <!-- 홈페이지에서 아이디 글자 클릭하면 포커스가 텍스트창으로 넘어감 -->
+		</div>
+		<div>
+			<lable>이메일</lable>
+			<input type="email" />
+		</div>
+		<div>
+			<lable>전화번호</lable>
+			<input type="tel" />
+		</div>
+		<div>
+			<lable>직무</lable>
+			<br> <input type="radio" name="job" />개발자 <input type="radio"
+				name="job" />디자이너 <input type="radio" name="job" />관리자
+		</div>
+		<div>
+			<lable>스킬</lable>
+			<br> <input type="checkbox" />개발자 <input type="checkbox" />리액트
+			<input type="checkbox" />노드
+		</div>
+		<div>
+			<lable>거주지</lable>
+			<select>
+				<option>서울</option>
+				<option>경기</option>
+				<option>대전</option>
+				<option>제주</option>
+				
+			</select>
+		</div>
+				<div>
+			<lable>하고 싶은 말</lable>
+			<textarea rows="3" cols="30"></textarea> <!-- cols = A가 몇개가 들어가느냐 -->
+		</div>
+		<div>
+			<input type="submit" value="가입"/>
+			<input type="button" value="버튼1"/>
+			<input type="reset" value="취소"/>
+			<button>버튼2</button>
+		</div>
+
+	</form>
+
+</body>
+</html>
