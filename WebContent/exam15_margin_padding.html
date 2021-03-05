@@ -9,6 +9,12 @@
 	padding: 0px;
 }
 
+#wrapper {
+	width: 800px;
+	margin: 0px auto; /*800을 제외한 여백 / auto쓰려면 고정크기 지정*/
+	background-color: black;
+}
+
 #div1 {
 	width: 200px;
 	height: 200px;
@@ -20,6 +26,8 @@
 	height: 200px;
 	background-color: #ced4da;
 	margin: 10px;
+	padding: 10px 30px;
+	box-sizing: border-box;
 }
 
 #div21 {
@@ -39,11 +47,12 @@
 </style>
 </head>
 <body>
-	<div id="div1"></div>
-	<div id="div2">
-		<div id=div21></div>
+	<div id="wrapper">
+		<div id="div1"></div>
+		<div id="div2">
+			<div id=div21></div>
+		</div>
+		<div id="div3"></div>
 	</div>
-
-	<div id="div3"></div>
 </body>
 </html>
