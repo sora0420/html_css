@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		width: 100px;
+		height: 100px;
+		background-color: #dee2e6;
+		border: 1px solid black;
+		margin: 10px;
+		display: inline-block;
+		/*inline의 속성을 갖게끔 바꿈*/
+	/*그냥 inline은 margin, padding 요소 변경 x*/ 
+	/*clear: left; >>빈 공간을 없애겟다 > 그리고 그 다음줄 공간에 만들겟다*/
+	/*clear: both; >> 왼쪽, 오른쪽 다 공간을 지우겟다*/
+	}
+	
+	#div2{
+		/*display: none; //아예 자리까지 없앰*/
+		visibility: hidden; /*숨김효과, 자리는 있음*/
+	}
+</style>
+</head>
+<body>
+<div id="div1">A</div>
+<div id="div2">B</div>
+<div id="div3">C</div>
+
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#img1 {
+  float: left;
+}
+#img2 {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<h2>Float Right</h2>
+
+<p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+
+<p><img id="img1" src="pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;">
+
+<img id="img2" src="pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+</body>
+</html>
+
+ -->
