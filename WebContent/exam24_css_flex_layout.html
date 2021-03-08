@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.header {
+	background-color: #748ffc;
+	padding: 30px;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+}
+
+.cneter{
+	display: flex;
+}
+
+.leftmenu {
+	list-style-type: none; 
+	background-color: #e9ecef;
+	padding: 10px;
+	flex: 1;
+	/*width: 30%; /*center의 30% 밑에 70%해서 딱 맞게*/
+	/*height: 300px; /*height: 100% >>부모 크기의 100% / 해봤자 부모자식 관계가 끊어져서 안먹힘*/
+}
+/*float을 한뒤에는 새롭게 배치되는 내용을 clear: both로 정리*/
+.content {
+
+	padding: 10px;
+	flex:4;
+	/*width: 70%;
+	/* height: auto; /*auto = 내용물의 크기만큼만 잡힘
+	height: 300px; */
+	
+}
+
+.footer{
+	background-color: #adb5bd;
+	text-align: center;
+	padding: 10px;
+
+}
+</style>
+</head>
+<body>
+	<div class="header">
+		<h3>Cities</h3>
+	</div>
+
+	<div class="center">
+		<div class="leftmenu"><!-- leftmenu의 부모는 center인데 float를 써서 부모자식관계가 끊어짐 -->
+			<ul>
+				<li>London</li>
+				<li>Paris</li>
+				<li>Seoul</li>
+
+			</ul>
+		</div>
+		<div class="content">
+			<h1>London</h1>
+			<p>An image with border and margins that floats to the right in a paragraph
+Let an image float to the right in a paragraph. Add border and margins to the image.
+
+An image with a caption that floats to the right
+Let an image with a caption float to the right.
+
+Let the first letter of a paragraph float to the left
+Let the first letter of a paragraph float to the left and style the letter.
+
+Creating a website with float Use float to create a homepage with a navbar, header, footer, left content and main content.</p>
+
+		</div>
+	</div>
+
+	<div class="footer">
+	Footer
+	</div>
+	
+</body>
+</html>
